@@ -65,7 +65,7 @@ def sphgtonorm(l,alpha):
     return math.sqrt(a/b)
     
 # Coordinates of He2
-coord  = np.array([[0.0,0.0,0.5],[0.0,0.0,-0.5]])
+coord  = np.array([[0.0,0.0,1.2],[0.0,0.0,-1.2]])
 charge = np.array([2.0,2.0])
 
 # we use STO-3G basis sets. Only have S functions
