@@ -1,0 +1,526 @@
+#!awk.bdf.output
+====================== BDF version information ============================
+commit 17fac34fb8728df30aa1579a087fb1edc7f6910a
+Merge: a65c65c 9df98ec
+Author: Zikuan Wang <zwang@kofo.mpg.de>
+Date:   Thu Sep 7 04:42:46 2023 +0800
+
+    Merge branch 'master' of 182.92.69.169:/opt/gitroot/bdf-pkg
+===========================================================================
+BDFHOME     = /home/zxqu/soft/bdf-pkg/build/bdf-pkg-full 
+BDF_TMPDIR  = /tmp 
+BDF_MPIRUN  = None 
+BDF_MPIROOT = None 
+|---------------------------------------------------------------------|
+ Could not find mpirun. Set to serial running ...
+
+
+(' BDFHOME     = ', '/home/zxqu/soft/bdf-pkg/build/bdf-pkg-full')
+(' BDF_WORKDIR = ', '/home/zxqu/Previous_files/LHC/BDF')
+(' BDF_TMPDIR  = ', '/home/zxqu/scratch/19562')
+(' BDFTASK     = ', 'h2')
+
+  BDF parallel running information ...
+('  BDF_MASTER_NODE', 'master')
+('  BDF_MPIROOT = ', 'None')
+  Total number of computational nodes   = 1
+  Number of processes per node          = 1
+  Number of openmp threads per process  = 32
+
+
+('  Singlepoint_task = ', True)
+('  Fragmp2_task     = ', False)
+
+
+$compass
+title
+h2o
+Geometry
+O 0.00000000 0.00000000 0.10683000
+H 0.00000000 0.78517800 -0.42731900
+H 0.00000000 -0.78517800 -0.42731900
+End Geometry
+basis
+6-31g
+group
+c(1)
+$end
+$xuanyuan
+$end
+$scf
+rhf
+charge
+0
+spin
+1
+molden
+$end
+$compass
+title
+h2o
+Geometry
+O 0.00000000 0.00000000 0.10683000
+H 0.00000000 0.78517800 -0.42731900
+H 0.00000000 -0.78517800 -0.42731900
+End Geometry
+basis
+6-31g
+group
+c(1)
+$end
+('tmpstdin ', True)
+('npro is ', 1)
+('\n BDF command: ', '/home/zxqu/soft/bdf-pkg/build/bdf-pkg-full/bin/compass.x /home/zxqu/scratch/19562/h2XX0.compass.inp')
+  BDF process        0 of        1 on Serial  
+
+|******************************************************************************|
+
+    Start running module compass
+    Current time   2024-12-02  10:20:46
+
+|******************************************************************************|
+
+ ++++++++++ Reading compass input ++++++++++++++++++
+ TITLE
+ GEOMETRY
+ O       0.00000000      0.00000000      0.10683000
+ H       0.00000000      0.78517800     -0.42731900
+ H       0.00000000     -0.78517800     -0.42731900
+ Number of atoms:        3
+ BASIS
+ Input Basis set is 6-31G
+ Spherical GTO 5d,7f
+ GROUP
+ $END
+ ++++++++++ End of reading compass input +++++++++++++
+
+
+|-------------------------------------------------------------------------------------------|
+
+ Atom           Cartcoord(Bohr)                 Charge Basis Auxbas Uatom Nstab Alink  Mass
+  O        0.000000     0.000000     0.201879     8.00    1     0     0     0   E     15.9949
+  H        0.000000     1.483771    -0.807516     1.00    2     0     0     0   E      1.0073
+  H        0.000000    -1.483771    -0.807516     1.00    2     0     0     0   E      1.0073
+
+|--------------------------------------------------------------------------------------------|
+
+  End of reading atomic basis sets ..
+ Printing basis sets for checking ....
+
+ Atomic label:  O    8
+ Maximum L  1 10s4p ----> 3s2p NBF =   9
+ #--->s function
+      Exp Coef          Norm Coef       Con Coef
+          5484.671660   0.161019E+04    0.001831    0.000000    0.000000
+           825.234946   0.388999E+03    0.013950    0.000000    0.000000
+           188.046958   0.128296E+03    0.068445    0.000000    0.000000
+            52.964500   0.496025E+02    0.232714    0.000000    0.000000
+            16.897570   0.210564E+02    0.470193    0.000000    0.000000
+             5.799635   0.944203E+01    0.358521    0.000000    0.000000
+            15.539616   0.197740E+02    0.000000   -0.110778    0.000000
+             3.599934   0.660292E+01    0.000000   -0.148026    0.000000
+             1.013762   0.255251E+01    0.000000    1.130767    0.000000
+             0.270006   0.946335E+00    0.000000    0.000000    1.000000
+ #--->p function
+      Exp Coef          Norm Coef       Con Coef
+            15.539616   0.900088E+02    0.070874    0.000000
+             3.599934   0.144661E+02    0.339753    0.000000
+             1.013762   0.296759E+01    0.727159    0.000000
+             0.270006   0.567807E+00    0.000000    1.000000
+
+
+ Atomic label:  H    1
+ Maximum L  0 4s ----> 2s NBF =   2
+ #--->s function
+      Exp Coef          Norm Coef       Con Coef
+            18.731137   0.227477E+02    0.033495    0.000000
+             2.825394   0.550585E+01    0.234727    0.000000
+             0.640122   0.180806E+01    0.813757    0.000000
+             0.161278   0.642978E+00    0.000000    1.000000
+
+
+
+ Molecular center of mass
+         0.00000000     0.00000000     0.08896767
+
+ Molecular center of nuclear charge
+         0.00000000     0.00000000     0.00000038
+ [molesym]
+
+ Auto decide molecular point group! Rotate coordinates into standard orientation!
+ Threshold= 0.10000E-08 0.10000E-11 0.10000E-03
+
+User set molecular point group as C(1)    
+ zgeomsort being called!
+gsym: C02V, noper=    4
+ Exiting zgeomsort....
+ Representation generated
+  Binary group is observed ...
+  Point group name C(2V)                       1
+  User set point group as C(1)    
+  Largest Abelian Subgroup C(1)                        1
+ Representation generated
+ C|1|)|                    1
+ Symmetry check OK
+ Molecule has been symmetrized
+  Number of symmery unique centers:                     3
+
+|-------------------------------------------------------------------------------------------|
+
+ Atom           Cartcoord(Bohr)                 Charge Basis Auxbas Uatom Nstab Alink  Mass
+  O       -0.000000    -0.000000     0.201879     8.00    1     0     0     0   E     15.9949
+  H       -1.483771     0.000000    -0.807516     1.00    2     0     0     0   E      1.0073
+  H        1.483771    -0.000000    -0.807516     1.00    2     0     0     0   E      1.0073
+
+|--------------------------------------------------------------------------------------------|
+
+ rep A        * A        = A                           1
+Number of irreps:    1
+IRREP:   1   1   1
+DIMEN:   1   1   1
+
+ Irreps of multipole moment operators ...
+ Operator  Component    Irrep       Row
+  Dipole       x           A           1
+  Dipole       y           A           1
+  Dipole       z           A           1
+  Quadpole     xx          A           1
+  Quadpole     xy          A           1
+  Quadpole     yy          A           1
+  Quadpole     xz          A           1
+  Quadpole     yz          A           1
+  Quadpole     zz          A           1
+
+ Generate symmetry adapted orbital ...
+ Print Multab
+  1
+
+|--------------------------------------------------|
+         Symmetry adapted orbital                   
+
+  Irrep : A 
+
+ Total number of basis functions:      13      13
+
+  Irrep :     A
+  Norb  :     13
+|--------------------------------------------------|
+
+Total number of shells:        4
+
+Number of atoms:       3
+Number of basis functions:      13
+
+|******************************************************************************|
+
+    Total cpu     time:          0.01  S
+    Total system  time:          0.02  S
+    Total wall    time:          0.02  S
+
+    Current time   2024-12-02  10:20:46
+    End running module compass
+|******************************************************************************|
+
+$xuanyuan
+$end
+('tmpstdin ', True)
+('npro is ', 1)
+('\n BDF command: ', '/home/zxqu/soft/bdf-pkg/build/bdf-pkg-full/bin/xuanyuan.x /home/zxqu/scratch/19562/h2XX1.xuanyuan.inp')
+  BDF process        0 of        1 on Serial  
+
+|******************************************************************************|
+
+    Start running module xuanyuan
+    Current time   2024-12-02  10:20:46
+
+|******************************************************************************|
+ $xuanyuan                                                                                                               
+ $end                                                                                                                    
+  Mass polarization term:  F
+ Total nuclear charge :         10.00
+ Nuclear repulsion energy :       9.2527986780 a.u.
+
+ Total number of primitive  basis sets :           30
+ Total number of prim-cart  basis sets :           30
+ Total number of contracted basis sets :           13
+
+  Estimate memory for calculating 2e integrals...
+ Minium memory to calculate ERIs:        1.460 M
+
+[aoint_1e]
+  Calculating one electron integrals ...
+  S T and V integrals ....
+  Dipole and Quadupole integrals ....
+  Finish calculating one electron integrals ...
+
+ ---------------------------------------------------------------
+  Timing to calculate 1-electronic integrals                                      
+
+  CPU TIME(S)      SYSTEM TIME(S)     WALL TIME(S)
+          0.010            0.000               0.000
+ ---------------------------------------------------------------
+
+ Finish calculating 1e integral ...
+ Direct SCF required. Skip 2e integral!
+ Set significant shell pairs!
+
+ Number of significant pairs:       10
+ Timing caluclate K2 integrals.
+ CPU:       0.00 SYS:       0.00 WALL:       0.01
+ lenk2                  326                    8
+|******************************************************************************|
+
+    Total cpu     time:          0.16  S
+    Total system  time:          0.02  S
+    Total wall    time:          0.16  S
+
+    Current time   2024-12-02  10:20:46
+    End running module xuanyuan
+|******************************************************************************|
+
+$scf
+rhf
+charge
+0
+spin
+1
+molden
+$end
+('tmpstdin ', True)
+('npro is ', 1)
+('\n BDF command: ', '/home/zxqu/soft/bdf-pkg/build/bdf-pkg-full/bin/scf.x /home/zxqu/scratch/19562/h2XX2.scf.inp')
+  BDF process        0 of        1 on Serial  
+
+|******************************************************************************|
+
+    Start running module scf
+    Current time   2024-12-02  10:20:47
+
+|******************************************************************************|
+
+|-------------------------------------------------------------------------------------------|
+
+ Atom           Cartcoord(Bohr)                 Charge Basis Auxbas Uatom Nstab Alink  Mass
+  O       -0.000000    -0.000000     0.201879     8.00    1     0     1     1   E     15.9949
+  H       -1.483771     0.000000    -0.807516     1.00    2     0     1     1   E      1.0073
+  H        1.483771    -0.000000    -0.807516     1.00    2     0     1     1   E      1.0073
+
+|--------------------------------------------------------------------------------------------|
+
+  [ SCF control ] 
+ $scf
+ rhf
+ charge
+ spin
+ molden
+ $end
+
+  --- PRINT: Information about SCF Calculation --- 
+ ICTRL_FRAGSCF=  0
+ IPRT  =  3
+ IPRTMO=  1
+ MAXITER=  100
+ THRENE= 0.10E-07 THRDEN= 0.50E-05
+ DAMP= 0.00 VSHIFT= 0.00
+ IFDIIS= T
+ THRDIIS= 0.10E+01
+ MINDIIS=   2 MAXDIIS=   8
+ iCHECK=  0
+ iAUFBAU=  1
+ INIGUESS=  0
+ IfMPEC= F
+ IfCOSX= F
+ Occupation number:
+  Without occupation number in input.
+
+ Wave function information ...
+ Total Nuclear charge    :      10
+ Total electrons         :      10
+ ECP-core electrons      :       0
+ Spin multiplicity(2S+1) :       1
+ Num. of alpha electrons :       5
+ Num. of beta  electrons :       5
+
+
+ Threshold in dft prescreening ...
+ Thresh_shellvalue_dft :  0.10000E-09
+ ThreshRho     :  0.10000E-11
+
+
+  --- END:  Information about SCF Calculation  --- 
+
+ The SMH converger is used...
+ Finish scf input!
+
+ DirectHF  T
+ Number of significient shell pairs :       10
+ Estimate memory for direct ERI calculations:           1.473 M
+ Reading enviroment variable error: USE_LIBCINT
+ Error code:                    1
+
+ IF USE_LIBCINT :    F
+
+ Nuclear repulsion energy =     9.25279868
+
+ iniguess                    0                    0
+ [ATOM SCF control]
+  heff=                     0
+ After initial atom grid ...
+ Finish atom    1  O             -74.2598924112
+ After initial atom grid ...
+ Finish atom    2  H              -0.4982329093
+
+
+ Superposition of atomic densities as initial guess.
+ Check basis set linear dependence! Tolerance =   0.100000E-04
+ No. of occupied and virtual orbitals:        5        8
+ [init_smh]
+ sTDA/sTD-DFT parameters:
+ facex =     1.0000
+ alpha =     2.1900
+ beta  =     2.5200
+
+ Warning: the level shift will be reset to    0.20000
+ Initial guess energy =    -75.2563582298
+
+
+ Start SCF iteration......
+
+
+Iter.   idiis  vshift       SCF Energy            DeltaE          RMSDeltaD          MaxDeltaD      Damping    Times(S) 
+   1      0    0.200     -75.9463126049      -0.6899543751       0.0414585275       0.2102550967    0.0000      0.01
+   2      1    0.200     -75.9484126502      -0.0021000452       0.0214291696       0.1365250977    0.0000      0.00
+   3      2    0.200     -75.9449077338       0.0035049163       0.0113220513       0.0658983081    0.0000      0.01
+   4      3    0.200     -75.9852802073      -0.0403724734       0.0004393765       0.0026920169    0.0000      0.01
+   5      4    0.200     -75.9853577081      -0.0000775009       0.0001188219       0.0009316862    0.0000      0.01
+   6      5    0.200     -75.9853591642      -0.0000014560       0.0000126855       0.0000919171    0.0000      0.01
+   7      6    0.200     -75.9853591687      -0.0000000045       0.0000026168       0.0000171039    0.0000      0.02
+ diis/vshift is closed at iter =   7
+   8      0    0.000     -75.9853591690      -0.0000000003       0.0000000508       0.0000002043    0.0000      0.00
+
+  Label              CPU Time        SYS Time        Wall Time
+ SCF iteration time:         0.120 S        0.160 S        0.070 S
+
+ Final DeltaE =  -3.1705837955087190E-010
+ Final DeltaD =   5.0832542760042983E-008   5.0000000000000002E-005
+
+ Final scf result
+   E_tot =               -75.98535917
+   E_ele =               -85.23815785
+   E_nn  =                 9.25279868
+   E_1e  =              -123.11848492
+   E_ne  =              -199.13309380
+   E_kin =                76.01460888
+   E_ee  =                37.88032707
+   E_xc  =                 0.00000000
+   Virial Ratio            1.999615
+
+
+ [Final occupation pattern: ]
+
+ Irreps:        A   
+
+ detailed occupation for iden/irep:      1   1
+    1.00 1.00 1.00 1.00 1.00 0.00 0.00 0.00 0.00 0.00
+    0.00 0.00 0.00
+ Alpha       5.00
+
+
+ [Orbital energies:]
+
+ Energy of occ-orbs:    A             5
+             -20.55348635      -1.35252398      -0.72637226      -0.54823302      -0.49829789
+ Energy of vir-orbs:    A             8
+               0.20698298       0.30290379       1.10545753       1.16119874       1.16716601
+               1.20464553       1.38893959       1.67610272
+
+ Alpha   HOMO energy:      -0.49829789 au     -13.55938117 eV  Irrep: A       
+ Alpha   LUMO energy:       0.20698298 au       5.63229585 eV  Irrep: A       
+ HOMO-LUMO gap:       0.70528087 au      19.19167702 eV
+
+ [Alpha MOs]
+ Frontier orbitals of each irrep:
+
+  Symmetry   1 A       
+
+         Orbital                 1              2              3              4              5              6
+         Energy            -20.55349       -1.35252       -0.72637       -0.54823       -0.49830        0.20698
+         Occ No.             2.00000        2.00000        2.00000        2.00000        2.00000        0.00000
+      1 1O|1S0               0.99577       -0.21312        0.00000       -0.07137       -0.00000        0.08771
+      2 1O|2S0               0.02202        0.47005       -0.00000        0.17055       -0.00000       -0.10842
+      3 1O|3S0              -0.00805        0.47963       -0.00000        0.28969        0.00000       -1.21115
+      4 1O|2P-1              0.00000       -0.00000       -0.00000        0.00000       -0.64018        0.00000
+      5 1O|3P-1             -0.00000        0.00000       -0.00000       -0.00000       -0.51155       -0.00000
+      6 1O|2P0              -0.00202       -0.10586       -0.00000        0.56058        0.00000        0.21637
+      7 1O|3P0               0.00179       -0.05640       -0.00000        0.41875       -0.00000        0.44494
+      8 1O|2P1              -0.00000       -0.00000        0.50446        0.00000       -0.00000        0.00000
+      9 1O|3P1               0.00000        0.00000        0.26247        0.00000       -0.00000        0.00000
+     10 2H|1S0               0.00005        0.14089       -0.26548       -0.13455       -0.00000        0.06354
+     11 2H|2S0               0.00201       -0.00852       -0.11474       -0.07518       -0.00000        1.00510
+     12 3H|1S0               0.00005        0.14089        0.26548       -0.13455        0.00000        0.06354
+     13 3H|2S0               0.00201       -0.00852        0.11474       -0.07518        0.00000        1.00510
+
+         Orbital                 7              8              9             10             11
+         Energy              0.30290        1.10546        1.16120        1.16717        1.20465
+         Occ No.             0.00000        0.00000        0.00000        0.00000        0.00000
+      1 1O|1S0              -0.00000       -0.00000        0.07229        0.00000       -0.03580
+      2 1O|2S0               0.00000        0.00000       -0.31812        0.00000        0.22671
+      3 1O|3S0              -0.00000       -0.00000        0.01136        0.00000        0.08618
+      4 1O|2P-1             -0.00000        0.00000       -0.00000        0.96240       -0.00000
+      5 1O|3P-1             -0.00000       -0.00000        0.00000       -1.03652        0.00000
+      6 1O|2P0              -0.00000       -0.00000        0.26713        0.00000        0.94529
+      7 1O|3P0              -0.00000        0.00000        0.32674       -0.00000       -1.15827
+      8 1O|2P1               0.33030       -0.12671        0.00000        0.00000       -0.00000
+      9 1O|3P1               0.84422       -0.84169       -0.00000        0.00000       -0.00000
+     10 2H|1S0               0.03147       -1.00009        1.00504        0.00000       -0.11147
+     11 2H|2S0               1.39004        0.41165       -0.49352       -0.00000       -0.17636
+     12 3H|1S0              -0.03147        1.00009        1.00504       -0.00000       -0.11147
+     13 3H|2S0              -1.39004       -0.41165       -0.49352       -0.00000       -0.17636
+
+
+ [Mulliken Population Analysis]
+  Atomic charges: 
+     1O      -0.8112
+     2H       0.4056
+     3H       0.4056
+     Sum:    -0.0000
+
+ [Lowdin Population Analysis]
+  Atomic charges: 
+     1O      -0.5919
+     2H       0.2960
+     3H       0.2960
+     Sum:    -0.0000
+
+
+ [Dipole moment: Debye]
+              X          Y          Z         |u|
+   Elec:-.6208E-14 0.1195E-14 -.2501E+01
+   Nucl:-.5644E-15 0.2506E-30 0.0000E+00
+   Totl:   -0.0000     0.0000    -2.5006     2.5006
+  Reorder orbital via orbital energy ...                    1                    1
+
+ Output to Molden format ...
+
+
+ ---------------------------------------------------------------
+  Timing of SCF calculation                                                       
+
+  CPU TIME(S)      SYSTEM TIME(S)     WALL TIME(S)
+          0.310            0.180               0.250
+ ---------------------------------------------------------------
+
+|******************************************************************************|
+
+    Total cpu     time:          0.31  S
+    Total system  time:          0.18  S
+    Total wall    time:          0.25  S
+
+    Current time   2024-12-02  10:20:47
+    End running module scf
+|******************************************************************************|
+
+Total wall time           0.60 Seconds
+/home/zxqu/soft/bdf-pkg/build/bdf-pkg-full/sbin/bdfsummary.py\bdf_summary\\RHF/STO-3G\\0,1\\O,-0.0000000000,-0.0000000000,0.2018790639\H,-1.4837713790,0.0000000000,-0.8075162558\H,1.4837713790,-0.0000000000,-0.8075162558\\RHF=\\
+Congratulations! BDF normal termination
+('/home/zxqu/scratch/19562', '/home/zxqu/Previous_files/LHC/BDF')

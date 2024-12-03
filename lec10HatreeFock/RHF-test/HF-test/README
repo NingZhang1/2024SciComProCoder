@@ -1,0 +1,32 @@
+basis=6-31G
+Folder xyz contains the geometry of H2(0.75), LiH(1.6), H2O(O-H:0.95 Angle:111.5)
+Folder two_ele contains the double electronic integrals of H2, LiH, H2O
+
+The calculation of different molecules requires modification
+      Integer,Parameter :: NATOM=2    !!!atom number
+      Integer,Parameter :: NORB=11    !!!orbital number(AO)
+      Integer,Parameter :: Num_ele=4  !!!ele number
+
+      inv_DIIS=1  !!=1: call DIIS
+      open(21,file='output.log')      !!! output file
+      open(26,file='two_ele/LiH.txt') !!! Read the two-electron integral
+      file_name='xyz/LiH.xyz'         !!! Geometric 
+
+=================================================================
+Molecule     NATOM      NORB      Num_ele
+H2             2         4           2
+LiH            2         11          4
+H2O            3         13          10
+=================================================================
+SCF iteration:
+Molecule     DIIS       NO-DIIS
+H2            8           8
+LiH           10          13 	     		
+H2O           15          37
+=================================================================
+Energy:
+Molecule     Program                   BDF_SCF
+H2            -1.12654509	       -1.12654503           
+LiH           -7.97932165              -7.97932157     		               
+H2O          -75.98535997             -75.98535917
+
