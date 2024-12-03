@@ -88,7 +88,7 @@ sint = np.zeros(21)
 kint = np.zeros(21)
 
 Pab = np.zeros(3)
-
+PA  = np.zeros(3)
 m = 0
 for iatom in range(0,2):
     for i in range(0,3):
@@ -249,7 +249,7 @@ for iatom in range(0,2):
                     PC  = Pab[:] - coord[ic][:]
                     RPC = PC[0]*PC[0]+PC[1]*PC[1]+PC[2]*PC[2]
                     T = rho*RPC
-                    nint[m] = nint[m] + charge[ic]*Boys.boys(0,T)
+                    nint[m] = nint[m] + charge[ic]*boys(0,T)
                     #print("T",T,Boys.boys(0,T))
                 #2*Epq*math.PI/rho*normc[i]*normc[j]/((2.*math.sqrt(PI))**2)  
                 nint[m] = -Epq*nint[m]*normc[i]*normc[j]/(2.*rho) 
