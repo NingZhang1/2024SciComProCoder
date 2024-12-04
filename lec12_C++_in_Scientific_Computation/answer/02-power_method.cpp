@@ -1,10 +1,3 @@
-/*
- * @Author: Ning Zhang
- * @Date: 2024-12-03 15:27:19
- * @Last Modified by: Ning Zhang
- * @Last Modified time: 2024-12-03 N:10:03
- */
-
 #include "../include/basic.h"
 #include "random_generator.h"
 

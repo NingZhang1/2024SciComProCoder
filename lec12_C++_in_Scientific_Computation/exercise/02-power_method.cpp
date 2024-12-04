@@ -1,10 +1,3 @@
-/*
- * @Author: Ning Zhang
- * @Date: 2024-12-03 15:27:19
- * @Last Modified by: Ning Zhang
- * @Last Modified time: 2024-12-03 N:10:03
- */
-
 #include "../include/basic.h"
 #include "random_generator.h"
 
@@ -88,7 +81,7 @@ public:
     // 构造函数：生成随机 Hermitian 矩阵
     explicit DenseMVP(size_t size) { _generate_matrix(size); }
 
-    void apply(const std::vector<Scalar>& vec, std::vector<Scalar>& result) const override
+    virtual void apply(const std::vector<Scalar>& vec, std::vector<Scalar>& result) const
     {
         for (size_t i = 0; i < matrix_.size(); ++i)
         {

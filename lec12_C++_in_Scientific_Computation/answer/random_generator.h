@@ -1,9 +1,4 @@
-/*
- * @Author: Ning Zhang
- * @Date: 2024-12-03 15:44:51
- * @Last Modified by: Ning Zhang
- * @Last Modified time: 2024-12-03 15:53:41
- */
+#pragma once
 
 #include <random>
 #include "01-linear_algebra_interface.h"

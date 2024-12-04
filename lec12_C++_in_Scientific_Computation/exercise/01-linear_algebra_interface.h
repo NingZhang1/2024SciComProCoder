@@ -1,9 +1,4 @@
-/*
- * @Author: Ning Zhang
- * @Date: 2024-05-23 13:30:27
- * @Last Modified by: Ning Zhang
- * @Last Modified time: 2024-12-03 16:36:50
- */
+#pragma once
 
 #include "../include/basic.h"
 
